@@ -75,29 +75,51 @@
         width: 30%;
       }
       .avatarImage {
-        width: 50%;
+        /* width: 30%; */
+        height: 32px;
       }
       .houseImage {
         /* width: 15%; */
         height: 144px;
       }
+      .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
       .card1 {
         position: absolute;
         bottom: 10%;
+        height: 104px;
       }
       .card2 {
         position: absolute;
         bottom: 10%;
         left: 55%;
+        height: 104px;
       }
       .card3 {
         position: absolute;
         bottom: 10%;
         right: -8%;
+        height: 104px;
       }
       .mainContainer {
         width: 100%;
         overflow: hidden;
+      }
+      @media (max-width: 760px) {
+        .card1 {
+          top: 15%;
+        }
+        .card2 {
+          top: 50%;
+          left: 10%;
+        }
+        .card3 {
+          top: 80%;
+          left: 10%;
+        }
       }
     </style>
   </head>
@@ -294,8 +316,6 @@
                 </div>
               </div>
             </div>
-            <!-- </div>
-            </div> -->
           </div>
         </div>
       </div>
@@ -311,131 +331,47 @@
         </button>
       </div>
     </section>
-    <!-- <div class="row bg-light justify-content-between mx-5"> -->
-    <!-- <div class="col-2">
-        <img src="assets/images/Rectangle 22.png" alt="" />
-      </div> -->
-
-    <!-- <div class="col-4"> -->
-    <!-- <div class="row"> -->
-    <!-- <img src="assets/images/Ellipse 6.png" class="avtarImage" alt="" /> -->
-    <!-- <p>The things we need to check when we want to buy a house</p>
-        <p>The things we need to check when we want to buy a house</p>
-      </div> -->
-
-    <!-- <p>The things we need to check when we want to buy a house</p>
-        <div class="row">
-          <img src="" class="" alt="clock" />
-          <p>4 min read | 25 Apr 2021</p>
-        </div> -->
-    <!-- </div> -->
-    <!-- <div class="col-6">
-        <p>xxxx</p>
-      </div>
-    </div> -->
 
     <div class="row justify-content-center container">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 col-sm-8">
             <img
               src="assets/images/Rectangle 22.png"
               alt=""
               class="houseImage"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-2 col-sm-2">
                 <img
                   src="assets/images/Ellipse 6.png"
                   alt=""
                   class="avatarImage"
                 />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-12">
                 <p>Dianne Russell</p>
               </div>
             </div>
             <p>The things we need to check when we want to buy a house</p>
-            <p>4 min read | 25 Apr 2021</p>
+            <div class="row">
+              <div class="col-md-2 col-sm-2">
+                <img src="" alt="clock" class="" />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <p>4 min read | 25 Apr 2021</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
         <p>ddd</p>
       </div>
     </div>
 
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="row justify-content-between"> -->
-    <!-- <div class="col-md-4"> -->
-    <!-- <img
-              src="assets/images/Rectangle 22.png"
-              alt=""
-              class="houseImage"
-            /> -->
-    <!-- </div> -->
-
-    <!-- <div class="col-md-4"> -->
-    <!-- <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="assets/images/Ellipse 6.png"
-                  alt=""
-                  class="avatarImage"
-                />
-              </div>
-
-              <div class="col-md-8">
-                <p>Dianne Russell</p>
-              </div>
-            </div>
-            <p>The things we need to check when we want to buy a house</p>
-
-            <div class="row">
-              <div class="col-md-4">
-                <img src="" class="" alt="clock" />
-              </div>
-
-              <div class="col-md-8">
-                <p>4 min read | 25 Apr 2021</p>
-              </div>
-            </div> -->
-    <!-- </div> -->
-    <!-- </div>
-        </div>
-        <div class="col-md-6">dddd</div>
-      </div>
-    </div> -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-<!-- <div class="col-md-6"> -->
-<!-- <div class="content"> -->
-<!-- <div class="d-flex"> -->
-<!-- <div> -->
-<!-- </div> -->
-<!-- <div class="text"> -->
-<!-- <div class="user bg-danger d-flex align-content-center"> -->
-<!-- <div> -->
-<!-- </div> -->
-<!-- <div>
-              <div class="d-flex h-100 align-items-center">
-                <p>als;kdfj</p>
-              </div>
-            </div> -->
-<!-- </div> -->
-<!-- <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            laboriosam exercitationem incidunt qui voluptates rerum accusantium
-            sequi soluta deleniti neque!
-          </p> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="col-md-6"></div> -->
