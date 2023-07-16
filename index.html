@@ -53,6 +53,13 @@
 
       .signup-btn {
         background-color: #d1fae5;
+        font-family: Lexend;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 22px;
+        letter-spacing: 0px;
+        text-align: left;
+
         color: #047857 !important;
       }
 
@@ -60,7 +67,11 @@
         background-image: url("assets/images/image 6.png");
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+         background-size: contain;
+         -moz-background-size: 100% 100%;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+         
         position: relative;
       }
 
@@ -75,67 +86,71 @@
         width: 30%;
       }
       .avatarImage {
-        width: 50%;
+        /* width: 30%; */
+        height: 32px;
       }
       .houseImage {
         /* width: 15%; */
         height: 144px;
       }
+      .cardContainer {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+      }
       .card1 {
         position: absolute;
         bottom: 10%;
+        height: 104px;
       }
       .card2 {
         position: absolute;
         bottom: 10%;
         left: 55%;
+        height: 104px;
       }
       .card3 {
         position: absolute;
         bottom: 10%;
         right: -8%;
+        height: 104px;
       }
       .mainContainer {
         width: 100%;
         overflow: hidden;
       }
-      .content h6{
-        font-family: Lexend;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 24px;
-        letter-spacing: 0px;
-        text-align: left;
-
-
+      @media (max-width: 760px) {
+        .card1 {
+          top: 15%;
+        }
+        .card2 {
+          top: 50%;
+          left: 10%;
+        }
+        .card3 {
+          top: 80%;
+          left: 10%;
+        }
       }
-      .content span{
 
+      .navbar-nav a {
         font-family: Lexend;
-        font-size: 12px;
-        font-weight: 400;
-        line-height: 20px;
-        letter-spacing: 0px;
-        text-align: left;
-        
-      }
-      .yellow-header{
-
-        colorfont-family: Lexend;
-
-font-weight: 500;
-color: #F59E0B;
+font-size: 14px;
+font-weight: 600;
+line-height: 18px;
 letter-spacing: 0px;
-text-align: center;
+text-align: left;
+color: #F0F3FD;
+;
 
       }
-      .cap{
-        text-transform: capitalize;
-      }
 
-      .fixed-nav{
-        display: inline-block;
-      }
+      #contact-us .container {
+				background-image: url('assets/images/Rectangle\ 24.png');
+				background-position: center;
+				background-size: cover;
+				background-repeat: no-repeat;
+			}
     </style>
   </head>
 
@@ -200,7 +215,7 @@ text-align: center;
         </div>
       </div>
     </nav>
-
+<!-- section 1*************** -->
     <section class="container-fluid mb-5 mainContainer">
       <div class="row">
         <div class="col-5 offset-1 vh-100">
@@ -304,11 +319,11 @@ text-align: center;
 
             <div class="col-md-3 bg-light item rounded-5 card2">
               <div class="container h-100">
-                <div class="d-flex align-items-center">
-                  <div class="image " >
+                <div class="d-flex align-items-center bg-light">
+                  <div class="image">
                     <img
                       src="assets/images/Rectangle 12.png"
-                      class="w-100" 
+                      class="w-100"
                       alt=""
                     />
                   </div>
@@ -331,42 +346,14 @@ text-align: center;
                 </div>
               </div>
             </div>
-            <!-- </div>
-            </div> -->
           </div>
         </div>
       </div>
     </section>
 
-    <!-- section2 ******************************************** -->
-    <section class="bot p-5">
-      <div class="title-crown  findoutHeader">
-        <p class=" text-start cap yellow-header">
-          Our Recommendation
-        </p>
-        <div class="row">
-        <h2 class=" cap text-start">
-          Find out more about 
-        </h2>
-
-        <div class="button-container  container-fluid text-center">
-          <button class="rounded-pill d-inline-block py-2 px-3 signup-btn">hello</button>
-          <button class="rounded-pill d-inline-block py-2 px-3 signup-btn">hello</button>
-          <button class="rounded-pill d-inline-block py-2 px-3 signup-btn">hello</button>
-        </div>
-        <!-- <button class="mx-auto d-block btn btn-success rounded-pill">
-          More artikel
-        </button> -->
-      </div>
-      </div>
-    </section>
-    <!-- section 3 **************************** -->
-    <section class="bot p-5">
+    <section class="">
       <div class="title-crown mx-auto findoutHeader">
-        <p class=" text-center cap yellow-header">
-          See tips and trick from our partnership
-        </p>
-        <h2 class="bot pb-3 cap text-center">
+        <h2 class="text-center">
           Find out more about selling and buying homes
         </h2>
         <button class="mx-auto d-block btn btn-success rounded-pill">
@@ -374,131 +361,191 @@ text-align: center;
         </button>
       </div>
     </section>
-    <!-- <div class="row bg-light justify-content-between mx-5"> -->
-    <!-- <div class="col-2">
-        <img src="assets/images/Rectangle 22.png" alt="" />
-      </div> -->
 
-    <!-- <div class="col-4"> -->
-    <!-- <div class="row"> -->
-    <!-- <img src="assets/images/Ellipse 6.png" class="avtarImage" alt="" /> -->
-    <!-- <p>The things we need to check when we want to buy a house</p>
-        <p>The things we need to check when we want to buy a house</p>
-      </div> -->
-
-    <!-- <p>The things we need to check when we want to buy a house</p>
-        <div class="row">
-          <img src="" class="" alt="clock" />
-          <p>4 min read | 25 Apr 2021</p>
-        </div> -->
-    <!-- </div> -->
-    <!-- <div class="col-6">
-        <p>xxxx</p>
-      </div>
-    </div> -->
-     <div class="container-fluid mb-5 mainContainer p-5 ">
     <div class="row justify-content-center container">
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
         <div class="row">
-          <div class="col-md-4 ">
+          <div class="col-md-4 col-sm-8">
             <img
               src="assets/images/Rectangle 22.png"
               alt=""
               class="houseImage"
             />
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-2 col-sm-2">
                 <img
                   src="assets/images/Ellipse 6.png"
                   alt=""
                   class="avatarImage"
                 />
               </div>
-              <div class="col-md-6">
+              <div class="col-md-6 col-sm-12">
                 <p>Dianne Russell</p>
               </div>
             </div>
             <p>The things we need to check when we want to buy a house</p>
-            <p>4 min read | 25 Apr 2021</p>
+            <div class="row">
+              <div class="col-md-2 col-sm-2">
+                <img src="" alt="clock" class="" />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <p>4 min read | 25 Apr 2021</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 col-sm-12">
         <p>ddd</p>
       </div>
     </div>
-  </div>
-    <!-- <div class="container">
-      <div class="row">
-        <div class="col-6">
-          <div class="row justify-content-between"> -->
-    <!-- <div class="col-md-4"> -->
-    <!-- <img
-              src="assets/images/Rectangle 22.png"
-              alt=""
-              class="houseImage"
-            /> -->
-    <!-- </div> -->
 
-    <!-- <div class="col-md-4"> -->
-    <!-- <div class="row">
-              <div class="col-md-4">
-                <img
-                  src="assets/images/Ellipse 6.png"
-                  alt=""
-                  class="avatarImage"
-                />
-              </div>
-
-              <div class="col-md-8">
-                <p>Dianne Russell</p>
+<!-- contact us  **************************-->
+<section id="contact-us" class="my-5 py-5">
+  <div class="container rounded-5 mb-5  py-3 px-5">
+    <div class="row">
+      <div class="col-md-3">
+        <img
+          src="assets/images/Component 1.png"
+          class="footer-img"
+          alt=""
+        />
+      </div>
+      <div class="col-md-6">
+        <div class="container-fluid h-100">
+          <div
+            class="row justify-content-center align-items-center h-100"
+          >
+            <div class="content text-center">
+              <h1 class="mb-5">
+                Subscribe For More Info and update from
+                Hounter
+              </h1>
+              <div
+                class="rounded-pill border border-1 d-flex justify-content-between align-items-center p-1 w-75 mx-auto"
+              >
+                <div
+                  class="icon-placeholder-container d-flex align-items-center w-75"
+                >
+                  <i
+                    class="fa-solid fa-envelope fs-4 ps-3 me-3 text-primary"
+                  ></i>
+                  <input
+                    type="text"
+                    id="search-box"
+                    class="bg-transparent border-0 w-75"
+                    placeholder="Your email here"
+                  />
+                </div>
+                <button
+                  class="btn btn-success rounded-pill text-white"
+                >
+                  Subscribe
+                </button>
               </div>
             </div>
-            <p>The things we need to check when we want to buy a house</p>
-
-            <div class="row">
-              <div class="col-md-4">
-                <img src="" class="" alt="clock" />
-              </div>
-
-              <div class="col-md-8">
-                <p>4 min read | 25 Apr 2021</p>
-              </div>
-            </div> -->
-    <!-- </div> -->
-    <!-- </div>
+          </div>
         </div>
-        <div class="col-md-6">dddd</div>
       </div>
-    </div> -->
+      <div class="col-md-3">
+        <img
+          src="assets/images/a.png"
+          class="footer-img"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- foooter ******************** -->
+    <footer class="my-5 py-5">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<img
+							src="assets/images/Logo.png"
+							class="w-10 mb-3"
+							alt=""
+						/>
+						<p>
+							Lorem ipsum, dolor sit amet consectetur adipisicing
+							elit. Accusantium illum delectus doloremque nobis
+							atque commodi consequatur minus totam veniam dolor!
+						</p>
+						<div class="socials-container">
+							<div class="d-flex align-items-center">
+								<i
+									class="fa-brands fa-instagram fs-4 ps-3 me-3 text-primary"
+								></i
+								><i
+									class="fa-brands fa-facebook fs-4 ps-3 me-3 text-primary"
+								></i
+								><i
+									class="fa-brands fa-twitter fs-4 ps-3 me-3 text-primary"
+								></i>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7 offset-1">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4">
+									<ul>
+										<li class="mb-2 fw-bold">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li class="mb-2 fw-bold">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+									</ul>
+								</div>
+								<div class="col-md-4">
+									<ul>
+										<li class="mb-2 fw-bold">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+										<li class="mb-2">
+											Lorem, ipsum dolor.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
-
-<!-- <div class="col-md-6"> -->
-<!-- <div class="content"> -->
-<!-- <div class="d-flex"> -->
-<!-- <div> -->
-<!-- </div> -->
-<!-- <div class="text"> -->
-<!-- <div class="user bg-danger d-flex align-content-center"> -->
-<!-- <div> -->
-<!-- </div> -->
-<!-- <div>
-              <div class="d-flex h-100 align-items-center">
-                <p>als;kdfj</p>
-              </div>
-            </div> -->
-<!-- </div> -->
-<!-- <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
-            laboriosam exercitationem incidunt qui voluptates rerum accusantium
-            sequi soluta deleniti neque!
-          </p> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- </div> -->
-<!-- <div class="col-md-6"></div> -->
