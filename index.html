@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg fixed-top bg-transparent">
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent" >
   <div class="container">
     <div>
       <img src="assets/images/Logo.png" class="w-100" alt=""/>
@@ -31,10 +31,10 @@
         <li>
           <ul class="navbar-nav">
             <li class="nav-item rounded-pill border border-1 px-2">
-              <a class="nav-link" aria-current="page" href="#">About Us </a>
+              <a class="nav-link" aria-current="page" href="#contact-us">About Us </a>
             </li>
             <li class="nav-item rounded-pill border border-1 px-2">
-              <a class="nav-link" href="#">Article</a>
+              <a class="nav-link" href="#articles">Article</a>
             </li>
             <li class="nav-item rounded-pill border border-1 px-2 dropdown">
               <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -43,7 +43,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">Action</a>
+                  <a class="dropdown-item" href="#properties">Action</a>
                 </li>
                 <li>
                   <a class="dropdown-item" href="#">Another action</a>
@@ -64,7 +64,7 @@
   </div>
 </nav>
 <!-- section 1*************** -->
-<section class="container-fluid mb-5 mainContainer">
+<section class="container-fluid mb-5 mainContainer" style="background-image: url('./assets/bg/top_blur.png');background-repeat: no-repeat">
   <div class="row">
     <div class="intro col-lg-5 offset-1 vh-lg-100">
       <div class="content-container d-flex justify-content-start align-items-center w-100 h-100">
@@ -153,9 +153,10 @@
 <!-- section 3 ********************************************* -->
 
 
-<div class="container-fluid row-carousel">
+<div class="container-fluid row-carousel" style="position: relative" id="properties">
+  <img src="assets/bg/right_blur.png" alt="" style="position: absolute; bottom: -20rem;right: 0;z-index: -10"/>
   <p class="text-start" style="color: #f59e0b">Our Recommendations</p>
-  <h1 class="text-start rec">Featured House</h1>
+  <h1 class="text-start rec " style="color: black">Featured House</h1>
 
   <div class="d-flex justify-content-center align-items-center w-auto mb-2 flex-wrap">
     <ul class="d-flex align-items-center mb-0">
@@ -204,7 +205,9 @@
 
   <div class="row align-content-center justify-content-center gy-4">
     <div id="prop1" class="col-sm-6 col-md-4 col-lg-3">
-      <img class="w-100" src="assets/images/house1.png" alt="/"/>
+      <div style="background-image: url('./assets/images/house1.png');width: 100%;height: 20rem;background-size: contain;position: relative;background-repeat: no-repeat;background-position: center" >
+        <div class="choices" style="display: flex;gap:0.5rem;align-items: center;background: #FEE2E2;width: fit-content;padding-left: 0.5rem;padding-right: 0.5rem;border-radius: 2rem;position:absolute;color:#EF4444"><img src="assets/images/ant_fire.png" alt="ant_fire" style="width: 1rem;padding:0">Popular</div>
+      </div>
       <p style="font-size: 24px; font-weight: 500">Roselands House</p>
       <p style="color: #3c4563; margin-top: -10px">$ 35.000.000</p>
       <div class="d-flex align-items-center">
@@ -219,54 +222,57 @@
       </div>
     </div>
     <div id="prop2" class="col-sm-6 col-md-4 col-lg-3">
-      <img class="w-100" src="assets/images/house1.png" alt="/"/>
-      <p style="font-size: 24px; font-weight: 500">Roselands House</p>
-      <p style="color: #3c4563; margin-top: -10px">$ 35.000.000</p>
+      <div style="background-image: url('./assets/images/Rectangle 15.png');width: 100%;height: 20rem;background-size: contain;position: relative;background-repeat: no-repeat;background-position: center" >
+        <div class="choices" style="display: flex;gap:0.5rem;align-items: center;background: #DBEAFE;width: fit-content;padding-left: 0.5rem;padding-right: 0.5rem;border-radius: 2rem;position:absolute;color:#1D4ED8"><img src="assets/images/house-fill.png" alt="ant_fire" style="width: 1rem;padding:0">New House</div>
+      </div>
+      <p style="font-size: 24px; font-weight: 500">Woodlandside</p>
+      <p style="color: #3c4563; margin-top: -10px">$ 20.000.000</p>
       <div class="d-flex align-items-center">
         <img src="assets/images/avatar1.png" alt="/"/>
         <div class="d-flex flex-column align-items-center">
-          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Dianne
-            Russell</p>
+          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Robert Fox</p>
           <p
                   style="color: #888b97; align-self: stretch; font-size: 14px; line-height: 22px; margin-top: 0; margin-bottom: 0;">
-            Manchester, Kentucky</p>
+            Dr. San Jose, South Dakota</p>
         </div>
       </div>
     </div>
     <div id="prop3" class="col-sm-6 col-md-4 col-lg-3">
-      <img class="w-100" src="assets/images/house1.png" alt="/"/>
-      <p style="font-size: 24px; font-weight: 500">Roselands House</p>
-      <p style="color: #3c4563; margin-top: -10px">$ 35.000.000</p>
+      <div style="background-image: url('./assets/images/third_house.png');width: 100%;height: 20rem;background-size: contain;position: relative;background-repeat: no-repeat;background-position: center" >
+        <div class="choices" style="display: flex;gap:0.5rem;align-items: center;background: #D1FAE5;width: fit-content;padding-left: 0.5rem;padding-right: 0.5rem;border-radius: 2rem;position:absolute;color:#047857"><img src="assets/images/wallet.png" alt="ant_fire" style="width: 1rem;padding:0">Best Deals</div>
+      </div>
+      <p style="font-size: 24px; font-weight: 500">The Old Lighthouse</p>
+      <p style="color: #3c4563; margin-top: -10px">$ 44.000.000</p>
       <div class="d-flex align-items-center">
         <img src="assets/images/avatar1.png" alt="/"/>
         <div class="d-flex flex-column align-items-center">
-          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Dianne
-            Russell</p>
+          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Ronald Richards</p>
           <p
                   style="color: #888b97; align-self: stretch; font-size: 14px; line-height: 22px; margin-top: 0; margin-bottom: 0;">
-            Manchester, Kentucky</p>
+            Santa Ana, Illinois</p>
         </div>
       </div>
     </div>
     <div id="prop4" class="col-sm-6 col-md-4 col-lg-3">
-      <img class="w-100" src="assets/images/house1.png" alt="/"/>
-      <p style="font-size: 24px; font-weight: 500">Roselands House</p>
-      <p style="color: #3c4563; margin-top: -10px">$ 35.000.000</p>
+      <div style="background-image: url('./assets/images/Rectangle 15.png');width: 100%;height: 20rem;background-size: contain;position: relative;background-repeat: no-repeat;background-position: center" >
+        <div class="choices" style="display: flex;gap:0.5rem;align-items: center;background: #FEE2E2;width: fit-content;padding-left: 0.5rem;padding-right: 0.5rem;border-radius: 2rem;position:absolute;color:#EF4444"><img src="assets/images/ant_fire.png" alt="ant_fire" style="width: 1rem;padding:0">Popular</div>
+      </div>
+      <p style="font-size: 24px; font-weight: 500">Cosmo's House</p>
+      <p style="color: #3c4563; margin-top: -10px">$ 22.000.000</p>
       <div class="d-flex align-items-center">
         <img src="assets/images/avatar1.png" alt="/"/>
         <div class="d-flex flex-column align-items-center">
-          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Dianne
-            Russell</p>
+          <p style="color: #0e1735; align-self: stretch; font-size: 18px; line-height: 24px; margin-bottom: 0;">Jenny Wilson</p>
           <p
                   style="color: #888b97; align-self: stretch; font-size: 14px; line-height: 22px; margin-top: 0; margin-bottom: 0;">
-            Manchester, Kentucky</p>
+            Preston Rd. Inglewood, Maine 98380</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- section 4 ****************************************** -->
-<section class="my-5">
+<section class="my-5" id="articles">
   <div class="title-crown mx-auto col-8 col-sm-6 col-md-4 col-lg-3">
     <h2 class="text-center">
       Find out more about selling and buying homes
@@ -278,7 +284,7 @@
 </section>
 
 <!------ ARTICLES SECTION ----->
-<section class="articles-section container text-center">
+<section class="articles-section container text-center" >
   <div class="row">
     <div class=" text-center row col-lg align-items-center justify-content-center mb-md-5" style="gap:2rem">
       <div class="row" style="gap: 1rem">
@@ -369,49 +375,8 @@
   </div>
 </section>
 
-<!--    <div class="row justify-content-center container">-->
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <div class="row">-->
-<!--          <div class="col-md-4 col-sm-8">-->
-<!--            <img-->
-<!--              src="assets/images/first_card_image.png"-->
-<!--              alt=""-->
-<!--              class="houseImage"-->
-<!--            />-->
-<!--          </div>-->
-<!--          <div class="col-md-6 col-sm-12">-->
-<!--            <div class="row">-->
-<!--              <div class="col-md-2 col-sm-2">-->
-<!--                <img-->
-<!--                  src="assets/images/Ellipse 6.png"-->
-<!--                  alt=""-->
-<!--                  class="avatarImage"-->
-<!--                />-->
-<!--              </div>-->
-<!--              <div class="col-md-6 col-sm-12">-->
-<!--                <p>Dianne Russell</p>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--            <p>The things we need to check when we want to buy a house</p>-->
-<!--            <div class="row">-->
-<!--              <div class="col-md-2 col-sm-2">-->
-<!--                <img src="" alt="clock" class="" />-->
-<!--              </div>-->
-<!--              <div class="col-md-6 col-sm-12">-->
-<!--                <p>4 min read | 25 Apr 2021</p>-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-<!--      <div class="col-md-6 col-sm-12">-->
-<!--        <p>ddd</p>-->
-<!--      </div>-->
-<!--    </div>-->
-
-
 <!------------- CONTACT US  ------------->
-<section id="contact-us" class="my-5 py-5">
+<section id="contact-us" class="my-5 py-5" >
   <div class="container rounded-5 mb-5  py-3 px-5">
     <div class="row">
       <div class="col-lg-3 text-end">
@@ -441,22 +406,22 @@
         </div>
       </div>
       <div class="col-lg-3">
-        <img src="assets/images/a.png" class="footer-img" alt=""/>
+        <img src="assets/images/a.png" class="footer-img" alt="footer"/>
       </div>
     </div>
   </div>
 </section>
 
 <!------------- FOOTER --------------->
-<footer class="my-5 py-5">
+<footer class="my-5 py-5"  style="position:relative;">
+  <img src="assets/bg/bottom_left.png" alt="bottom_left_blur" style="position:absolute;bottom: -5rem;left: 0;z-index: -10">
+  <img src="assets/bg/bottom_right.png" alt="bottom_left_blur" style="position:absolute;bottom: -5rem;right: 0;z-index: -10">
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
         <img src="assets/images/Logo.png" class="w-10 mb-3" alt=""/>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing
-          elit. Accusantium illum delectus doloremque nobis
-          atque commodi consequatur minus totam veniam dolor!
+          We provide information about properties such as houses, villas and apartments to help people find their dream home
         </p>
         <div class="socials-container">
           <div class="d-flex align-items-center">
@@ -472,48 +437,52 @@
             <div class="col-lg-4">
               <ul class="list-unstyled">
                 <li class="mb-2 fw-bold">
-                  Lorem, ipsum dolor.
+                  Property
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  House
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  Apartment
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  Villa
                 </li>
               </ul>
             </div>
             <div class="col-lg-4">
               <ul class="list-unstyled">
                 <li class="mb-2 fw-bold">
-                  Lorem, ipsum dolor.
+
+                  Article
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  New Article
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  Popular Article
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  Most Read
+                </li>
+                <li class="mb-2">
+                  Tips & Tricks
                 </li>
               </ul>
             </div>
             <div class="col-lg-4">
               <ul class="list-unstyled">
                 <li class="mb-2 fw-bold">
-                  Lorem, ipsum dolor.
+                  Contact
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  2464 Royal Ln. Mesa, New Jersey 45463
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  (671) 555-0110
                 </li>
                 <li class="mb-2">
-                  Lorem, ipsum dolor.
+                  info@hounter.com
                 </li>
               </ul>
             </div>
