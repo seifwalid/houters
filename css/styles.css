@@ -1,0 +1,136 @@
+@font-face {
+    font-family: Lexend;
+    src: url("/assets/fonts/Lexend-VariableFont_wght.ttf");
+}
+
+.hollow-text {
+    -webkit-text-stroke: 1px #1b1c57;
+    -webkit-text-fill-color: transparent;
+}
+
+.location-icon {
+    left: 5%;
+    top: 25%;
+}
+
+.search-box {
+    min-height: 25px;
+}
+
+.aa {
+    font-family: Lexend, sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+    text-transform: capitalize;
+    width: 75%;
+}
+
+.navbar-buttons-container {
+    width: 40%;
+}
+
+.nav-item {
+    margin: 0 5px;
+}
+
+.signup-btn {
+    background-color: #d1fae5;
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #047857 !important;
+}
+
+.image-container {
+    background-image: url("/assets/images/image 6.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    -moz-background-size: 100% 100%;
+    -webkit-background-size: 100% 100%;
+    background-size: 100% 100%;
+
+    position: relative;
+}
+
+.w-80 {
+    width: 80%;
+}
+
+.item {
+    min-height: 100px;
+}
+.findoutHeader {
+    width: 30%;
+}
+.avatarImage {
+    /* width: 30%; */
+    height: 32px;
+}
+.houseImage {
+    /* width: 15%; */
+    height: 144px;
+}
+.cardContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.card1 {
+    position: absolute;
+    bottom: 10%;
+    height: 104px;
+}
+.card2 {
+    position: absolute;
+    bottom: 10%;
+    left: 55%;
+    height: 104px;
+}
+.card3 {
+    position: absolute;
+    bottom: 10%;
+    right: -8%;
+    height: 104px;
+}
+.mainContainer {
+    width: 100%;
+    overflow: hidden;
+}
+@media (max-width: 760px) {
+    .card1 {
+        top: 15%;
+    }
+    .card2 {
+        top: 50%;
+        left: 10%;
+    }
+    .card3 {
+        top: 80%;
+        left: 10%;
+    }
+}
+
+.navbar-nav a {
+    font-family: Lexend;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #F0F3FD;
+}
+
+#contact-us .container {
+    background-image: url('/assets/images/Rectangle\ 24.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
