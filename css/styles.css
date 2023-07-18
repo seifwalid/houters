@@ -243,10 +243,10 @@ li svg {
 }
 
 @media screen and (min-width: 768px) {
-   .choices {
-       bottom: 2rem !important;
-       left: 1rem !important;
-   }
+    .choices {
+        bottom: 2rem !important;
+        left: 1rem !important;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -254,6 +254,7 @@ li svg {
         bottom: 1rem !important;
         left: 2.5rem !important;
     }
+
     .intro {
         padding-top: 20px;
     }
