@@ -3,6 +3,14 @@
     src: url("/assets/fonts/Lexend-VariableFont_wght.ttf");
 }
 
+/*html {*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+.navbar {
+    z-index: 10000;
+}
+
 .hollow-text {
     -webkit-text-stroke: 1px #1b1c57;
     -webkit-text-fill-color: transparent;
@@ -66,19 +74,11 @@
 }
 
 .avatarImage {
-    /* width: 30%; */
     height: 32px;
 }
 
 .houseImage {
-    /* width: 15%; */
     height: 144px;
-}
-
-.cardContainer {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
 }
 
 .card1, .card2, .card3 {
@@ -102,7 +102,7 @@
 }
 
 .mainContainer {
-    width: 100%;
+    /*width: 100%;*/
     overflow: hidden;
 }
 
@@ -234,24 +234,31 @@ li svg {
     width: 100%;
 }
 
+#prop1 > div, #prop2 > div, #prop3 > div, #prop4 > div {
+    display: flex;
+    align-items: end;
+}
+
+.choices {
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
 
 @media screen and (min-width: 400px) {
     .choices {
         left: 4.5rem !important;
-        bottom: 1rem !important;
+
     }
 }
 
 @media screen and (min-width: 768px) {
     .choices {
-        bottom: 2rem !important;
-        left: 1rem !important;
+        /*left: rem;*/
     }
 }
 
 @media screen and (min-width: 992px) {
     .choices {
-        bottom: 1rem !important;
         left: 2.5rem !important;
     }
 
