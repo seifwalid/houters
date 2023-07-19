@@ -69,6 +69,10 @@
     width: 80%;
 }
 
+.w-fit {
+    width: fit-content !important;
+}
+
 .item {
     min-height: 100px;
 }
@@ -152,14 +156,21 @@ li svg {
     height: 20px;
 }
 
+.row-nav {
+    gap: 4px;
+}
+
 .row-nav button {
     display: inline-flex;
-    padding: 4px 12px;
+    padding: 12px 16px;
     align-items: center;
-    gap: 4px;
     border-radius: 32px;
     border: 1px solid #e0e3eb;
     height: fit-content;
+}
+
+.filter-btn-list {
+    gap: 3px;
 }
 
 .row-nav button svg {
@@ -241,27 +252,20 @@ li svg {
 
 .choices {
     margin-bottom: 15px;
-    margin-left: 15px;
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 400px) {
-    .choices {
-        left: 4.5rem !important;
 
-    }
 }
 
 @media screen and (min-width: 768px) {
-    .choices {
-        /*left: rem;*/
+    .filter-btn-list {
+        gap: 10px;
     }
 }
 
 @media screen and (min-width: 992px) {
-    .choices {
-        left: 2.5rem !important;
-    }
-
     .intro {
         padding-top: 20px;
     }
